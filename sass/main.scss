@@ -1,66 +1,132 @@
 //Police Roboto
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-$roboto : 'Roboto', sans-serif;
-$loca_color : rgb(211,211,211);
-$menu_color : rgb(232,232,232);
+$family : 'Roboto', sans-serif;
+$loca_color : rgb(223, 223, 223);
+$menu_color : rgb(240, 240, 240);
 $primary_color : #9356DC;
 $secondary_color : #FF79DA;
 
-header 
+body
 {
-    font-family : $roboto;
-    text-align: center;
-
-    img
+    font-family : $family;
+}
+header 
     {
+        text-align: center;
+
+        img
+        {
         width : 50%;
         display : block;
         margin : auto;
         padding : 20px;
-    }
+        }
 
-    p 
-    {
-        font-size : 40px;
+        p 
+        {
+        font-size : 25px;
         background-color : $loca_color;
         padding : 30px;
         margin : 0;
-    }
+        }
 
-    .fa
-    {
-        font-size : 50px;
+        .fa
+        {
+        font-size : 40px;
         margin-right : 30px;
-    }
+        }
 
-    .header__menu
-    {
+        .header__menu
+        {
         background-color: $menu_color;
         padding : 80px 0px 120px 0px;
-    }
+        }
 
-    h1
-    {
-        font-size : 70px;
-        margin : 0px 70px 40px 70px;
-    }
-
-    span
-    {
+        h1
+        {
         font-size : 50px;
-        text-align: justify;
-    }
+        text-align: center;
+        margin : 0px 0px 30px 0px;
+        }
 
-    button
-    {
+        span
+        {
+        font-size : 45px;
+        text-align: justify;
+        color :rgb(95, 95, 95);
+        }
+
+        button
+        {
         margin-top : 50px;
         background : linear-gradient($secondary_color,$primary_color);
         border-radius: 60px;
+        border : none;
         width : 55%;
         height : 120px;
         font-size : 40px;
         color : white;
+        }
     }
 
-}
+    .title
+    {
+        font-size : 60px;
+        margin : 100px 0px 60px 40px;
+    }
+
+    ul
+    {
+        list-style-type : none;
+        padding : 0;
+        
+        .navi
+        {
+            border-radius: 60px;
+            border : 1px solid grey;
+            background : $menu_color;
+            padding : 50px;
+            margin : 45px;
+            width : 80%;
+            box-shadow : 0px 0px 20px rgb(161, 161, 161);
+            &--purple
+            {
+                background : rgb(238, 234, 247);
+            }
+        }
+
+        .fa-mobile-alt
+        {
+            font-size : 50px;
+            color : grey;
+            margin-right : 45px;
+        }
+
+        .fa-list
+        {
+            font-size : 40px;
+            color : grey;
+            margin-right : 40px;
+        }
+
+        .fa-store 
+        {
+            font-size : 40px;
+            color : $primary_color;
+            margin-right : 35px;
+        }
+
+        span
+        {
+            display : inline-block;
+            padding : 10px 20px;
+            font-size : 35px;
+            text-align : center;
+            border-radius : 50%;
+            background : $primary_color;
+            position : relative;
+            right : 80px;
+            color : white;
+        }
+    }
