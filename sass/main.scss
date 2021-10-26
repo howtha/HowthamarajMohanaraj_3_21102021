@@ -1,7 +1,11 @@
 //Police Roboto
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+//Police Shrikhand
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 $family : 'Roboto', sans-serif;
+$logo : 'Shrikhand', cursive;
 $loca_color : rgb(223, 223, 223);
 $menu_color : rgb(240, 240, 240);
 $primary_color : #9356DC;
@@ -11,77 +15,79 @@ body
 {
     font-family : $family;
 }
-header 
+
+.header 
     {
         text-align: center;
 
-        img
+        &__img
         {
-        width : 50%;
-        display : block;
-        margin : auto;
-        padding : 20px;
+            width : 50%;
+            display : block;
+            margin : auto;
+            padding : 20px;
         }
 
-        p 
+        &__loca 
         {
-        font-size : 25px;
-        background-color : $loca_color;
-        padding : 30px;
-        margin : 0;
+            font-size : 15px;
+            background-color : $loca_color;
+            padding : 30px;
+            margin : 0;
         }
 
         .fa
         {
-        font-size : 40px;
-        margin-right : 30px;
+            font-size : 40px;
+            margin-right : 30px;
         }
 
-        .header__menu
+        &__menu
         {
-        background-color: $menu_color;
-        padding : 80px 0px 120px 0px;
-        }
+            background-color: $menu_color;
+            padding : 80px 0px 120px 0px;
 
-        h1
-        {
-        font-size : 50px;
-        text-align: center;
-        margin : 0px 0px 30px 0px;
-        }
+            &__title
+            {
+                font-size : 50px;
+                text-align: center;
+                margin : 0px 0px 30px 0px;
+            }
 
-        span
-        {
-        font-size : 45px;
-        text-align: justify;
-        color :rgb(95, 95, 95);
-        }
+            &__catchphrase
+            {
+                font-size : 45px;
+                text-align: justify;
+                color :rgb(95, 95, 95);
+            }
 
-        button
-        {
-        margin-top : 50px;
-        background : linear-gradient($secondary_color,$primary_color);
-        border-radius: 60px;
-        border : none;
-        width : 55%;
-        height : 120px;
-        font-size : 40px;
-        color : white;
+            &__btn
+            {
+                margin-top : 50px;
+                background : linear-gradient($secondary_color,$primary_color);
+                border-radius: 60px;
+                border : none;
+                width : 55%;
+                height : 120px;
+                font-size : 40px;
+                color : white;
+            }
         }
     }
 
-    .title
+.fonc
+{
+    &__title
     {
-        font-size : 60px;
+        font-size : 50px;
         margin : 100px 0px 60px 40px;
     }
-
-    ul
+    &__nav
     {
         list-style-type : none;
         padding : 0;
-        
-        .navi
+
+        &__link
         {
             border-radius: 60px;
             border : 1px solid grey;
@@ -96,28 +102,7 @@ header
             }
         }
 
-        .fa-mobile-alt
-        {
-            font-size : 50px;
-            color : grey;
-            margin-right : 45px;
-        }
-
-        .fa-list
-        {
-            font-size : 40px;
-            color : grey;
-            margin-right : 40px;
-        }
-
-        .fa-store 
-        {
-            font-size : 40px;
-            color : $primary_color;
-            margin-right : 35px;
-        }
-
-        span
+        &__num
         {
             display : inline-block;
             padding : 10px 20px;
@@ -130,3 +115,96 @@ header
             color : white;
         }
     }
+
+    .fa-mobile-alt
+    {
+        font-size : 50px;
+        color : grey;
+        margin-right : 45px;
+    }
+
+    .fa-list
+    {
+        font-size : 40px;
+        color : grey;
+        margin-right : 40px;
+    }
+
+    .fa-store 
+    {
+        font-size : 40px;
+        color : $primary_color;
+        margin-right : 35px;
+    }   
+}
+
+.rest-prev
+{
+    background-color: $menu_color;
+    padding-bottom : 70px;
+
+    &__title
+    {
+        font-size : 50px;
+        margin : 150px 0px 60px 40px;
+        padding-top : 120px;
+    }
+
+    &__restaurant
+    {
+        background : white;
+        border-radius : 50px;
+        margin : 50px;
+        padding-bottom : 50px;
+
+        &__img
+        {
+            border-radius : 50px 50px 0px 0px;
+            width: 100%;
+            height : 450px;
+            object-fit: cover;
+        }
+        &__heading
+        {
+            font-size : 15px;
+            margin-left : 30px;
+        }
+        &__loca
+        {
+            color :rgb(95, 95, 95);
+            margin-left : 30px;
+            font-size : 15px;
+        }
+    }
+}
+
+.end-nav
+{
+    list-style-type: none;
+    background: rgb(54, 54, 54);
+    color : white;
+    padding : 50px;
+    font-size : 14px;
+    
+    &__logo
+    {
+        font-family: $logo;
+    }
+
+    &__link
+    {
+        margin : 15px;
+    }
+    
+    .fa-utensils
+    {
+        font-size : 40px;
+        margin-right : 20px;
+    }
+
+    .fa-hands-helping
+    {
+        font-size : 35px;
+        margin-right : 10px;
+    }
+}
