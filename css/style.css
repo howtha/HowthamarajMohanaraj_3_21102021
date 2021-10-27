@@ -109,6 +109,7 @@ body {
   border-radius: 50px;
   margin: 50px;
   padding-bottom: 50px;
+  position: relative;
 }
 .rest-prev__restaurant__img {
   border-radius: 50px 50px 0px 0px;
@@ -125,6 +126,30 @@ body {
   margin-left: 30px;
   font-size: 15px;
 }
+.rest-prev__restaurant__new {
+  font-size: 30px;
+  text-align: center;
+  background: #99E2D0;
+  color: #006105;
+  width: 100px;
+  padding: 15px 40px 15px 30px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+.rest-prev .fa-heart {
+  font-size: 55px;
+  position: relative;
+  float: right;
+  bottom: 30px;
+  right: 50px;
+  color: white;
+  text-shadow: 0 0 3px black;
+  transition: color 3000ms;
+}
+.rest-prev .fa-heart:hover {
+  color: #9356DC;
+}
 
 .end-nav {
   list-style-type: none;
@@ -138,6 +163,10 @@ body {
 }
 .end-nav__link {
   margin: 15px;
+}
+.end-nav__link--mail {
+  color: white;
+  text-decoration: none;
 }
 .end-nav .fa-utensils {
   font-size: 40px;
