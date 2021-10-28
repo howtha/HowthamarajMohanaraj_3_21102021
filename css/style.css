@@ -47,6 +47,13 @@ body {
   font-size: 40px;
   color: white;
 }
+.header .fa-arrow-left {
+  font-size: 50px;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  color: black;
+}
 
 .fonc__title {
   font-size: 50px;
@@ -117,6 +124,10 @@ body {
   height: 450px;
   object-fit: cover;
 }
+.rest-prev__restaurant__img--menu {
+  width: 100%;
+  height: 500px;
+}
 .rest-prev__restaurant__heading {
   font-size: 15px;
   margin-left: 30px;
@@ -175,6 +186,48 @@ body {
 .end-nav .fa-hands-helping {
   font-size: 35px;
   margin-right: 10px;
+}
+
+.menu-card {
+  background: #f0f0f0;
+}
+.menu-card__heading {
+  font-family: "Shrikhand", cursive;
+  font-size: 70px;
+  margin: 0;
+}
+.menu-card__heart {
+  margin-left: 100px;
+}
+.menu-card__type {
+  color: #5f5f5f;
+  font-size: 45px;
+  border-bottom: 10px solid #99E2D0;
+  width: 10%;
+}
+.menu-card__plat {
+  background: white;
+  margin: 30px;
+  border-radius: 30px;
+}
+.menu-card__plat__title {
+  font-size: 45px;
+  margin: 0;
+}
+.menu-card__plat__description {
+  font-size: 35px;
+  color: #5f5f5f;
+}
+.menu-card__btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 60px;
+  border: none;
+  width: 55%;
+  height: 120px;
+  font-size: 40px;
+  color: white;
+  display: block;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
