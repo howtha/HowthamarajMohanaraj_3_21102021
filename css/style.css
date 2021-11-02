@@ -126,7 +126,7 @@ body {
 }
 .rest-prev__restaurant__img--menu {
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 .rest-prev__restaurant__heading {
   font-size: 15px;
@@ -168,9 +168,14 @@ body {
   color: white;
   padding: 50px;
   font-size: 14px;
+  margin: 0;
 }
 .end-nav__logo {
   font-family: "Shrikhand", cursive;
+}
+.end-nav__logo--mobile {
+  font-size: 45px;
+  margin-bottom: 10px;
 }
 .end-nav__link {
   margin: 15px;
@@ -178,6 +183,10 @@ body {
 .end-nav__link--mail {
   color: white;
   text-decoration: none;
+}
+.end-nav__link--mobile {
+  font-size: 40px;
+  margin: 10px;
 }
 .end-nav .fa-utensils {
   font-size: 40px;
@@ -190,11 +199,17 @@ body {
 
 .menu-card {
   background: #f0f0f0;
+  padding-bottom: 150px;
+  border-radius: 90px 90px 0px 0px;
+  position: relative;
+  margin-top: -110px;
 }
 .menu-card__heading {
   font-family: "Shrikhand", cursive;
   font-size: 70px;
   margin: 0;
+  margin-left: 25px;
+  padding-top: 80px;
 }
 .menu-card__heart {
   margin-left: 100px;
@@ -204,19 +219,39 @@ body {
   font-size: 45px;
   border-bottom: 10px solid #99E2D0;
   width: 10%;
+  margin-left: 25px;
+  margin-top: 80px;
+  font-weight: normal;
 }
 .menu-card__plat {
   background: white;
   margin: 30px;
   border-radius: 30px;
+  height: 150px;
 }
 .menu-card__plat__title {
-  font-size: 45px;
+  font-size: 40px;
   margin: 0;
+  padding: 15px;
 }
 .menu-card__plat__description {
-  font-size: 35px;
+  font-size: 27px;
   color: #5f5f5f;
+  padding: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 75%;
+}
+.menu-card__plat__price {
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: 60%;
+}
+.menu-card__plat__price:hover {
+  background: #99E2D0;
 }
 .menu-card__btn {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -228,6 +263,7 @@ body {
   color: white;
   display: block;
   margin: auto;
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

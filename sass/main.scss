@@ -174,10 +174,11 @@ body
             width: 100%;
             height : 450px;
             object-fit: cover;
+
             &--menu
             {
                 width : 100%;
-                height : 500px; 
+                height : 600px; 
             }
         }
         &__heading
@@ -230,10 +231,17 @@ body
     color : white;
     padding : 50px;
     font-size : 14px;
+    margin : 0;
     
     &__logo
     {
         font-family: $logo;
+
+        &--mobile
+        {
+            font-size : 45px;
+            margin-bottom : 10px;
+        }
     }
 
     &__link
@@ -244,6 +252,11 @@ body
         {
             color : white;
             text-decoration: none;
+        }
+        &--mobile
+        {
+            font-size : 40px;
+            margin : 10px;
         }
     }
     
@@ -263,12 +276,18 @@ body
 .menu-card
 {
     background : $menu_color;
+    padding-bottom : 150px;
+    border-radius : 90px 90px 0px 0px;
+    position : relative;
+    margin-top : -110px;
 
     &__heading
     {
         font-family : $logo;
         font-size : 70px;
         margin : 0;
+        margin-left : 25px;
+        padding-top : 80px;
     }
     &__heart
     {
@@ -280,22 +299,46 @@ body
         font-size : 45px;
         border-bottom : 10px solid $tertiary_color;
         width : 10%;
+        margin-left : 25px;
+        margin-top : 80px;
+        font-weight: normal;
     }
     &__plat
     {
         background: white;
         margin : 30px;
         border-radius : 30px;
+        height : 150px;
 
         &__title
         {
-            font-size : 45px;
+            font-size : 40px;
             margin : 0;
+            padding : 15px;
         }
         &__description
         {
-            font-size : 35px;
+            font-size : 27px;
             color : rgb(95, 95, 95);
+            padding : 15px;
+            overflow : hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display : inline-block;
+            width : 75%;
+            
+        }
+        &__price
+        {
+            font-size : 30px;
+            font-weight: bold;
+            display : inline-block;
+            vertical-align: 60%;
+
+            &:hover
+            {
+                background : $tertiary_color;
+            }
         }
     }
     &__btn
@@ -309,5 +352,6 @@ body
         color : white;
         display : block;
         margin : auto;
+        margin-top : 100px;
     }
 }
