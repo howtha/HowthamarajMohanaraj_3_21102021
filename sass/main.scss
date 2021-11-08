@@ -309,6 +309,8 @@ body
         margin : 30px;
         border-radius : 30px;
         height : 150px;
+        position : relative;
+        overflow : hidden;
 
         &__title
         {
@@ -326,7 +328,6 @@ body
             text-overflow: ellipsis;
             display : inline-block;
             width : 75%;
-            
         }
         &__price
         {
@@ -334,11 +335,30 @@ body
             font-weight: bold;
             display : inline-block;
             vertical-align: 60%;
-
-            &:hover
-            {
-                background : $tertiary_color;
-            }
+        }
+        &__hover
+        {
+            display : inline-flex;
+            font-size : 50px;
+            background : $tertiary_color;
+            height : 100%;
+            align-items: center;
+            justify-content: center;
+            position : absolute;
+            top : 0;
+            right : -130px;
+            width : 130px;
+        }
+        &:hover
+        {
+            background-color : red;
+        }
+        .fa-check-circle
+        {
+            background : white;
+            color : $tertiary_color;
+            border-radius : 50%;
+            
         }
     }
     &__btn

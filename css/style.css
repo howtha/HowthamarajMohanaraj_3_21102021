@@ -228,6 +228,8 @@ body {
   margin: 30px;
   border-radius: 30px;
   height: 150px;
+  position: relative;
+  overflow: hidden;
 }
 .menu-card__plat__title {
   font-size: 40px;
@@ -250,8 +252,25 @@ body {
   display: inline-block;
   vertical-align: 60%;
 }
-.menu-card__plat__price:hover {
+.menu-card__plat__hover {
+  display: inline-flex;
+  font-size: 50px;
   background: #99E2D0;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -130px;
+  width: 130px;
+}
+.menu-card__plat:hover {
+  background-color: red;
+}
+.menu-card__plat .fa-check-circle {
+  background: white;
+  color: #99E2D0;
+  border-radius: 50%;
 }
 .menu-card__btn {
   background: linear-gradient(#FF79DA, #9356DC);
