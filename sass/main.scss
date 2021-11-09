@@ -336,7 +336,7 @@ body
             display : inline-block;
             vertical-align: 60%;
         }
-        &__hover
+        &__check
         {
             display : inline-flex;
             font-size : 50px;
@@ -346,21 +346,24 @@ body
             justify-content: center;
             position : absolute;
             top : 0;
-            right : -130px;
-            width : 130px;
+            right : 0px;
+            width : 0px;
+            overflow : hidden;
+            transition : width 800ms, transform 10s;
         }
-        &:hover
+        &:hover .menu-card__plat__check
         {
-            background-color : red;
+            width : 130px;
         }
         .fa-check-circle
         {
             background : white;
             color : $tertiary_color;
-            border-radius : 50%;
-            
+            border-radius : 50%; 
+            transform : rotate(180deg);
         }
     }
+
     &__btn
     {
         background : linear-gradient($secondary_color,$primary_color);
