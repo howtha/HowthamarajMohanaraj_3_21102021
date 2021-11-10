@@ -269,11 +269,15 @@ body {
 .menu-card__plat:hover .menu-card__plat__check {
   width: 130px;
 }
-.menu-card__plat .fa-check-circle {
+.menu-card__plat .checked {
   background: white;
   color: #99E2D0;
   border-radius: 50%;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
+  transition: transform 800ms;
+}
+.menu-card__plat:hover .menu-card__plat__check > .checked {
+  transform: rotate(360deg);
 }
 .menu-card__btn {
   background: linear-gradient(#FF79DA, #9356DC);

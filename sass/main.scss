@@ -355,12 +355,17 @@ body
         {
             width : 130px;
         }
-        .fa-check-circle
+        .checked
         {
             background : white;
             color : $tertiary_color;
             border-radius : 50%; 
-            transform : rotate(180deg);
+            transform : rotate(0deg);
+            transition : transform 800ms;
+        }
+        &:hover .menu-card__plat__check > .checked
+        {
+            transform : rotate(360deg);
         }
     }
 
