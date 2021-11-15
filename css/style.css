@@ -72,6 +72,9 @@ body {
   font-size: 40px;
   color: white;
 }
+.header__menu__btn:hover {
+  opacity: 0.9;
+}
 .header .fa-arrow-left {
   font-size: 50px;
   position: absolute;
@@ -252,33 +255,34 @@ body {
   background: white;
   margin: 30px;
   border-radius: 30px;
-  height: 150px;
+  height: 160px;
   position: relative;
   overflow: hidden;
 }
 .menu-card__plat__title {
-  font-size: 40px;
+  font-size: 45px;
   margin: 0;
-  padding: 15px;
+  padding: 20px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu-card__plat__description {
-  font-size: 27px;
+  font-size: 40px;
   color: #5f5f5f;
-  padding: 15px;
+  padding: 20px;
+  padding-top: 0px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   display: inline-block;
-  width: 75%;
+  width: 80%;
 }
 .menu-card__plat__price {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
-  display: inline-block;
-  vertical-align: 60%;
+  float: right;
+  margin-right: 60px;
 }
 .menu-card__plat__check {
   display: inline-flex;
@@ -318,6 +322,9 @@ body {
   display: block;
   margin: auto;
   margin-top: 100px;
+}
+.menu-card__btn:hover {
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */
