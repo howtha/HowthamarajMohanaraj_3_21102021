@@ -347,6 +347,8 @@ body
         height : 160px;
         position : relative;
         overflow : hidden;
+        display : flex;
+        flex-wrap : wrap;
 
         &__title
         {
@@ -356,6 +358,7 @@ body
             overflow : hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            flex : 100%;
         }
         &__description
         {
@@ -366,14 +369,12 @@ body
             overflow : hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            display : inline-block;
-            width : 80%;
+            flex : 40%;
         }
         &__price
         {
             font-size : 40px;
             font-weight: bold;
-            float : right;
             margin-right : 60px;
         }
         &__check
@@ -384,10 +385,9 @@ body
             height : 100%;
             align-items: center;
             justify-content: center;
-            position : absolute;
-            top : 0;
-            right : 0px;
             width : 0px;
+            position : relative;
+            bottom : 95px;
             overflow : hidden;
             transition : width 800ms, transform 10s;
         }
