@@ -31,6 +31,25 @@ $tertiary_color : #99E2D0;
     }
 }
 
+@keyframes decalage
+{
+    0% 
+    {
+        opacity : 0;
+        top : 50px;
+    }
+    50%
+    {
+        opacity : 0.5;
+        top : 25px;
+    }
+    100%
+    {
+        opacity : 1;
+        top : 0px;
+    }
+}
+
 .loader
 {
     border : 16px solid $primary_color;
@@ -349,6 +368,7 @@ body
         overflow : hidden;
         display : flex;
         flex-wrap : wrap;
+        animation : decalage 1.5s linear;
 
         &__title
         {
